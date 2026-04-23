@@ -20,7 +20,9 @@ const io = new Server(server, {
   cors: { origin: '*' }
 });
 
-app.use(cors());
+app.use(cors({
+  origin: ['https://food-delivery-six-lyart.vercel.app', 'http://localhost:5173']
+}));
 app.use(express.json());
 
 // Socket.io
