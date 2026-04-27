@@ -17,7 +17,7 @@ const seedRestaurants = async () => {
     const categories = data.categories;
 
     // جيب أول restaurant owner
-    const owner = await User.findById('69e8dca7fa92371f87cd7121');
+    const owner = await User.findById('69ef4ce7caf9901e48bd11a9');
     if (!owner) {
       console.log('No restaurant owner found!');
       process.exit(1);

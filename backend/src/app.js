@@ -21,7 +21,8 @@ const io = new Server(server, {
 });
 
 app.use(cors({
-  origin: ['https://food-delivery-six-lyart.vercel.app', 'http://localhost:5173']
+  origin: ['https://food-delivery-six-lyart.vercel.app', 'http://localhost:5173'],
+  credentials:true
 }));
 app.use(express.json());
 
